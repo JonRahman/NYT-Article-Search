@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #0073E6;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+h2 {
+    color: #0073E6;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+.read-more {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.read-more:hover {
+    text-decoration: underline;
+}

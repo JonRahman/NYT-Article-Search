@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Search Form</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Include your custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>New York Times Search</h1>
+    </header>
+    <div class="container">
+        <form id="newsSearchForm">
+            <div class="form-group">
+                <label for="query">Enter search query</label>
+                <input type="text" class="form-control" id="query" name="query" required>
+            </div>
+            <div class="form-group">
+                <label for="numberOfRecords">Number of Records to Retrieve</label>
+                <select class="form-control" id="numberOfRecords" name="numberOfRecords">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fromDate">From date (optional)</label>
+                <input type="date" class="form-control" id="fromDate" name="fromDate">
+            </div>
+            <div class="form-group">
+                <label for="toDate">To date (optional)</label>
+                <input type="date" class="form-control" id="toDate" name="toDate">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+            <button type="button" class="btn btn-danger" onclick="clearResults()">Clear Results</button>
+        </form>
+    </div>
+    <section class="container">
+        <h2>Top Articles</h2>
+        <ul>
+            <li>
+                <!-- Placeholder for top article content -->
+                <p>This is a placeholder for the top article content.</p>
+                <a href="#" class="read-more">Read more</a>
+            </li>
+            <!-- Add more list items for additional top articles -->
+        </ul>
+    </section>
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
